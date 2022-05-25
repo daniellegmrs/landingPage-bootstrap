@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-<!-- Link para pegar os estilos dos servidores do Bootstrap -->
+<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <style>
+        .tm-social{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
 </head>
 <body>
-<!-- Menu -->
+
+  <div class="bg-secondary text-white">
+<!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">NavBar</span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -38,25 +47,240 @@
           </form>
         </div>
       </nav>
-<!-- Menu -->
+<!-- /navbar -->
 
-<!-- Grid -->
+<!-- carousel -->
+  <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/FARGO.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/QUEEN.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/PEAK-1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+<!-- /carousel -->
 
-    <div class="container">
+<!-- jumbotron -->
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+          <h2 class="display-4">As 5 séries mais bem avaliadas do IMDB</h2>
+          <p class="lead">Confira aqui as 5 séries mais bem avaliadas do momento e onde assistir todas elas.<br><small class="text-muted">Atualizado em 25/05/2022</small></p>
+        </div>
+      </div>
+<!-- /jumbotron -->
 
-<div class="row mt-5 d-flex justify-content-center">
-    <div class="col-md-12">
-        <div class="bg-danger">12 colunas</div>
+<!-- cards -->
+<div class="container">
+  <div class="card mb-3 bg-dark">
+    <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/ilha-1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="text-center">Breaking Bad 9,4</h4>
+      <h6 class="card-title">Ano: 2008<br>
+        Onde ver: <a href="https://www.netflix.com/br/title/70143836" target="_blank">Netflix</a><br>
+        Temporadas: 5</h6>
+      <p class="card-text">Quem leva o prêmio de melhor série de todos os tempos é Breaking Bad, uma produção que conta a história de Walter White, um professor de química frustrado que, depois de descobrir uma doença terminal, começa a ganhar dinheiro produzindo metanfetamina junto com um ex aluno rebelde e atrapalhado. A série fez muito sucesso e até hoje é a melhor avaliada pela crítica. Ganhou diversos prêmios, incluindo dois Globos de Ouro: melhor série e melhor ator de série, para Bryan Cranston. Uma produção realmente incrível! Se você ainda não assistiu, pega a pipoca e não perde tempo!</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mb-3 bg-dark">
+    <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/break.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="text-center">Chernobyl 9,4</h4>
+      <h6 class="card-title">Ano: 2019<br>
+        Onde ver: <a href="https://play.hbomax.com/page/urn:hbo:page:GXJvkMAU0JIG6gAEAAAIo:type:series" target="_blank">HBO Max</a><br>
+        Temporadas: 1</h6>
+      <p class="card-text">O maior acidente nuclear da história foi retratado nesta minissérie, que ganhou o público e foi muito bem recebida pela crítica. A produção narra o acidente no reator 4 da usina na Ucrânia, em 1986, e os eventos que se sucederam, incluindo a polêmica sobre a maneira como as autoridades da antiga União Soviética lidaram com o caso. Uma minissérie que merece ser vista.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mb-3 bg-dark">
+    <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/dany-1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="text-center">Game of Thrones 9,2</h4>
+      <h6 class="card-title">Ano: 2011<br>
+        Onde ver: <a href="https://play.hbomax.com/page/urn:hbo:page:GVU2cggagzYNJjhsJATwo:type:series" target="_blank">HBO Max</a><br>
+        Temporadas: 8</h6>
+      <p class="card-text">De grande sucesso, está Game of Thrones, uma série que aborda a busca de 9 famílias pelo poder. A produção apresenta muitas histórias e personagens diferentes, todos relacionados entre si. Game of Thrones se desenrola no continente fictício de Westeros, formado por sete reinos. É nesse contexto que diversos grupos e famílias diferentes lutam pelo Trono de Ferro. Game of Thrones conquistou 1 Globo de Ouro e 59 Emmys.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mb-3 bg-dark">
+    <img src="https://ovicio.com.br/wp-content/uploads/2021/10/20211021-ovicio-the-sopranos-wallpapers-1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="text-center">The Sopranos 9,2</h4>
+      <h6 class="card-title">Ano: 1999<br>
+        Onde ver: <a href="https://play.hbomax.com/page/urn:hbo:page:GVU2b9AHpHo7DwvwIAT4i:type:series" target="_blank">HBO Max</a><br>
+        Temporadas: 6</h6>
+      <p class="card-text">Criada há mais de 20 anos atrás, Família Soprano é até hoje uma das séries preferidas do público. A história gira em torno de Tony, chefão da família Soprano e também de uma organização criminosa em Nova Jersey, nos Estados Unidos. A tensão da vida pessoal e criminosa de Tony o leva a procurar uma terapeuta, e é a partir dessas sessões que o drama dos Sopranos é apresentado ao público. A série ganhou cinco Globos de Ouro, além de diversos outros prêmios.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mb-3 bg-dark">
+    <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/HOLMES.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="text-center">Sherlock 9,0</h4>
+      <h6 class="card-title">Ano: 2010<br>
+        Onde ver: <a href="https://www.netflix.com/br/title/70143836" target="_blank">Amazon Prime</a><br>
+        Temporadas: 4</h6>
+      <p class="card-text">Sherlock Holmes é um personagem criado originalmente por Sir Arthur Conan Doyle em 1887, e que ficou ainda mais conhecido pelo público depois que a BBC decidiu produzir uma série sobre as aventuras do famoso detetive e seu companheiro Watson. A série se passa nos dias atuais na cidade de Londres, onde Sherlock Holmes e o Dr. John Watson irão trabalhar juntos para desvendar crimes misteriosos.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+    <!-- <div class="card-columns">
+        <div class="card">
+          <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/ilha-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nota 9,5</h5>
+            <p class="card-text">A melhor série de todos os tempos foi recusada por diversas emissoras! Pois é, vários canais não enxergaram seu potencial antes da hora. A série recebeu um não das emissoras Showtime, HBO, VX e TNT. Será que arrependimento mata?! Além disso, Breaking Bad entrou para o Livro dos Recordes como o maior sucesso de crítica de todos os tempos, e abocanhou mais de 146 prêmios (só nos Emmys, foram 16), ao longo das cinco temporadas do programa.</p>
+          </div>
+        </div>
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p>A well-known quote, contained in a blockquote element.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/break.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+          <blockquote class="blockquote mb-0">
+            <p>A well-known quote, contained in a blockquote element.</p>
+            <footer class="blockquote-footer text-white">
+              <small>
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.ghostradios.com/wp-content/uploads/2020/11/dany-1.jpg" class="card-img" alt="...">
+        </div>
+        <div class="card p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <p>A well-known quote, contained in a blockquote element.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div> -->
+    <!-- /cards -->
+
+<!-- txt&vd -->
+<div class="row mt-5 mb-5">
+    <div class="col-md-6">
+        <h3>Texto teste</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus unde earum adipisci id vero, eveniet voluptatibus perferendis amet quam blanditiis voluptatum suscipit impedit minus eius, quos, facere error ratione repellendus!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas iusto repellat voluptates ab molestias magni repudiandae fugit. Incidunt, ipsum veniam illo iste quia officiis, voluptate itaque deleniti maxime, enim unde!</p>
     </div>
 
+    <div class="col-md-6">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2-W6_6gJda0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<!-- /txt&vd -->
 
+<!-- formulário -->
+<div class="row">
+  <div class="col-md-6">
+    <h4 class="text-center">Entre em contato com a gente</h4>
+  </div>
+</div>
+
+<div class="row d-flex align-items-center">
+  <div class="col-md-6">
+    <form  class="needs-validation" novalidate> 
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nome</label>
+        <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" :valid >
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Assunto</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group d-flex justify-content-between">
+        <button class="btn btn-outline-success">Enviar</button>
+      </div>
+    </form>
+  </div>
+<div class="col-md-6">
+  <img src="https://gifs.eco.br/wp-content/uploads/2022/02/gifs-do-gatinho-digitando-2.gif" alt="">
 </div>
 </div>
+<!-- /formulário -->
+
+</div>
 
 
-<!-- Grid -->
+<!-- rodapé -->
+<hr>
+<footer class="bg-dark">
+    <div class="row mb-3">
+        <div class="col-md-12 d-flex justify-content-center">
+            <a href="" class="p-3"> <img class="tm-social" src="assets/img/facebook-icon.svg" alt="facebook"></a>
+            <a href="" class="p-3"> <img class="tm-social"src="assets/img/instagram-icon.svg" alt="instagram"></a>
+            <a href="" class="p-3"> <img class="tm-social" src="assets/img/twitter-official.svg" alt="twitter"></a>
+        </div>
+    </div>
 
-<!-- Scripts necessários para utilização dos códigos JS do Bootstrap -->
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-center">Todos os direitos reservados &copy;</p>
+        </div>
+    </div>
+</footer>
+<!-- /rodapé -->
+</div>
+
+<!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
